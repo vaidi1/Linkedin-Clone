@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="images/logo.png"> </a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Ryana</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>setting and privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>help and support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display and Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/user-1.png" class="profile-pic">
+                    <h1>Ryana</h1>
+                    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, rerum!</b>
+                    <p>Lorem, ipsum dolor. &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="images/user-2.png">
+                        <span>1 mutual-connection: Lorem, ipsum.</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png">connect</a>
+                        <a href="#"><img src="images/chat.png">message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-desc">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestias at quisquam, recusandae itaque minima vel ab. Consequuntur facere, obcaecati rerum facilis fugiat sed velit dolore praesentium fuga eos! Nesciunt ipsam repellat, aliquam repudiandae quibusdam similique distinctio? Aut, corrupti quisquam!</p>
+                <a href="#" class="see-more-link">See More</a>
+            </div>
+            <div class="profile-desc">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png">
+                    <div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <b>Lorem ipsum dolor sit.</b>
+                        <b>Lorem ipsum dolor sit amet consectetur.</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem maiores provident amet? Dolore, ullam?</p><hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/slack.png">
+                    <div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <b>Lorem ipsum dolor sit.</b>
+                        <b>Lorem ipsum dolor sit amet consectetur.</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem maiores provident amet? Dolore, ullam?</p><hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/google.png">
+                    <div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <b>Lorem ipsum dolor sit.</b>
+                        <b>Lorem ipsum dolor sit amet consectetur.</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem maiores provident amet? Dolore, ullam?</p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="exp-link">Show All 7 Experiences <img src="images/right-arrow.png"></a>
+            </div>
+
+            <div class="profile-desc">
+                <h2>Education</h2>
+                
+            </div>
+        </div>
+
+        <div class="profile-sidebar"></div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu")
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>
